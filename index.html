@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Becas ICPNA-IPFE</title>
+    <link rel="stylesheet" href="./jquery-ui.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <div class="logos animate__animated animate__fadeInDown"></div>
+    <div class="hero">
+      <section class="message animate__animated animate__fadeInDown"></section>
+      <section class="formulario">
+        <form
+          class="frmRegistro animate__animated animate__fadeInUp"
+          id="frmRegistro"
+          autocomplete="off"
+          enctype="multipart/form-data"
+        >
+          <div class="form-group">
+            <label for="nombres" class="form-group__label">Nombres *</label>
+            <input
+              type="text"
+              id="nombres"
+              name="nombres"
+              class="form-group__input"
+            />
+          </div>
+          <div class="form-group">
+            <label for="primerApellido" class="form-group__label"
+              >Primer apellido *</label
+            >
+            <input
+              type="text"
+              id="primerApellido"
+              name="primerApellido"
+              class="form-group__input"
+            />
+          </div>
+          <div class="form-group">
+            <label for="segundoApellido" class="form-group__label"
+              >Segundo apellido *</label
+            >
+            <input
+              type="text"
+              id="segundoApellido"
+              name="segundoApellido"
+              class="form-group__input"
+            />
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="nroDni" class="form-group__label"
+                  >Nº de DNI *</label
+                >
+                <input
+                  type="text"
+                  id="nroDni"
+                  name="nroDni"
+                  class="form-group__input"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="fNacimiento" class="form-group__label"
+                  >Fecha de nacimiento</label
+                >
+                <input
+                  type="text"
+                  id="fNacimiento"
+                  name="fNacimiento"
+                  class="form-group__input"
+                  placeholder="dia/mes/año"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-group__label"
+              >Correo electrónico *</label
+            >
+            <input
+              type="text"
+              id="email"
+              name="email"
+              class="form-group__input"
+            />
+          </div>
+          <div class="form-group">
+            <label for="nroCelular" class="form-group__label">Celular *</label>
+            <input
+              type="text"
+              id="nroCelular"
+              name="nroCelular"
+              class="form-group__input"
+            />
+          </div>
+          <div class="form-group">
+            <label for="nameDoc" class="form-group__label"
+              >Adjuntar comprobante *</label
+            >
+            <div class="row">
+              <div class="col col--archive">
+                <input
+                  type="text"
+                  id="nameDoc"
+                  name="nameDoc"
+                  class="form-group__input"
+                  disabled
+                />
+                <input
+                  hidden
+                  type="file"
+                  accept="image/*"
+                  id="file"
+                  name="file"
+                />
+              </div>
+              <div class="col">
+                <label class="btn-adjuntar" for="file"> Adjuntar </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group form-group--center">
+            <button type="submit" class="cta">Registrarme</button>
+          </div>
+        </form>
+      </section>
+    </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"
+    ></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

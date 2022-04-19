@@ -1,0 +1,13 @@
+.logos {
+  margin-bottom: 1rem;
+  background-image: url('img/logos-ipfe-icpna.png');
+  min-height: 60px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+
+  @include breakpoint-up(medium) {
+    min-height: 100px;
+    background-position-x: left;
+  }
+}

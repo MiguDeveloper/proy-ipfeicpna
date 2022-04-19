@@ -1,0 +1,94 @@
+.hero {
+  display: grid;
+  grid: auto/1fr;
+  align-items: center;
+  gap: 20px;
+
+  @include breakpoint-up(medium) {
+    grid-auto-flow: column;
+    grid-template-columns: minmax(375px, 455px) 1fr;
+    gap: 60px;
+  }
+}
+
+.formulario {
+  margin-bottom: 1rem;
+
+  @include breakpoint-up(medium) {
+    grid-column: 1/2;
+  }
+}
+
+.message {
+  background-image: url('img/conectemos-movil.png');
+  min-height: 70px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @include breakpoint-up(medium) {
+    grid-column: 2/3;
+    background-image: url('img/conectemos.png');
+    min-height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__conectemos {
+    object-fit: cover;
+  }
+}
+
+.frmRegistro {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 1.5rem 1rem 1rem;
+  border-radius: 3px;
+  box-shadow: 0 20px 40px -14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.7rem;
+
+  &__input {
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+    padding: 0.275rem 0.75rem;
+    line-height: 1.5;
+    display: block;
+  }
+
+  &__label {
+    color: #555;
+  }
+
+  &--center {
+    align-items: center;
+  }
+}
+
+.btn-adjuntar {
+  display: block;
+  padding: 0.36rem 1.5rem;
+  color: #555;
+  border: 1px solid #d8d6de;
+  border-radius: 4px;
+  background: #efefef;
+  cursor: pointer;
+}
+
+.cta {
+  padding: 0.6rem 5rem;
+  font-size: 1rem;
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+/*
+input[type='file'] {
+  display: none;
+}*/

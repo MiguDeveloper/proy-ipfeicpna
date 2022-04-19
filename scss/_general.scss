@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'gothamrnd';
+  src: url('../fonts/GothamRnd-Bold.otf') format('truetype');
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'gothamrnd', Arial, Helvetica, sans-serif;
+}
+
+::placeholder {
+  color: #cdcdcd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+  background-image: url('img/pattern.png');
+  background-size: contain;
+  background-position-x: -62px;
+  background-position-y: -125px;
+  color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 14px;
+  min-height: 100vh;
+}
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.col {
+  max-width: 148px;
+
+  @include breakpoint-up(medium) {
+    max-width: 100%;
+  }
+
+  &--archive {
+    max-width: 187px;
+    @include breakpoint-up(medium) {
+      max-width: 100%;
+    }
+  }
+}
+
+label.error {
+  color: var(--color-required-error);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+input.error,
+select.error {
+  border-color: var(--color-required-error);
+}
+
+.ui-datepicker-trigger {
+  cursor: pointer;
+}

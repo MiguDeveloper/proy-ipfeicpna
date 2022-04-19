@@ -1,0 +1,189 @@
+:root {
+  --color-primary: #000;
+  --color-bg: #ff9700;
+  --color-required-error: #b85252;
+}
+
+@font-face {
+  font-family: "gothamrnd";
+  src: url("../fonts/GothamRnd-Bold.otf") format("truetype");
+}
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gothamrnd", Arial, Helvetica, sans-serif;
+}
+
+::placeholder {
+  color: #cdcdcd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+  background-image: url("img/pattern.png");
+  background-size: contain;
+  background-position-x: -62px;
+  background-position-y: -125px;
+  color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 14px;
+  min-height: 100vh;
+}
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.col {
+  max-width: 148px;
+}
+@media (min-width: 43.75rem) {
+  .col {
+    max-width: 100%;
+  }
+}
+.col--archive {
+  max-width: 187px;
+}
+@media (min-width: 43.75rem) {
+  .col--archive {
+    max-width: 100%;
+  }
+}
+
+label.error {
+  color: var(--color-required-error);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+input.error,
+select.error {
+  border-color: var(--color-required-error);
+}
+
+.ui-datepicker-trigger {
+  cursor: pointer;
+}
+
+.logos {
+  margin-bottom: 1rem;
+  background-image: url("img/logos-ipfe-icpna.png");
+  min-height: 60px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+}
+@media (min-width: 43.75rem) {
+  .logos {
+    min-height: 100px;
+    background-position-x: left;
+  }
+}
+
+.hero {
+  display: grid;
+  grid: auto/1fr;
+  align-items: center;
+  gap: 20px;
+}
+@media (min-width: 43.75rem) {
+  .hero {
+    grid-auto-flow: column;
+    grid-template-columns: minmax(375px, 455px) 1fr;
+    gap: 60px;
+  }
+}
+
+.formulario {
+  margin-bottom: 1rem;
+}
+@media (min-width: 43.75rem) {
+  .formulario {
+    grid-column: 1/2;
+  }
+}
+
+.message {
+  background-image: url("img/conectemos-movil.png");
+  min-height: 70px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (min-width: 43.75rem) {
+  .message {
+    grid-column: 2/3;
+    background-image: url("img/conectemos.png");
+    min-height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.message__conectemos {
+  object-fit: cover;
+}
+
+.frmRegistro {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 1.5rem 1rem 1rem;
+  border-radius: 3px;
+  box-shadow: 0 20px 40px -14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.7rem;
+}
+.form-group__input {
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  padding: 0.275rem 0.75rem;
+  line-height: 1.5;
+  display: block;
+}
+.form-group__label {
+  color: #555;
+}
+.form-group--center {
+  align-items: center;
+}
+
+.btn-adjuntar {
+  display: block;
+  padding: 0.36rem 1.5rem;
+  color: #555;
+  border: 1px solid #d8d6de;
+  border-radius: 4px;
+  background: #efefef;
+  cursor: pointer;
+}
+
+.cta {
+  padding: 0.6rem 5rem;
+  font-size: 1rem;
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/*
+input[type='file'] {
+  display: none;
+}*/
+
+/*# sourceMappingURL=style.css.map */
