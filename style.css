@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "gothamrnd";
-  src: url("../fonts/GothamRnd-Bold.otf") format("truetype");
+  src: url("./fonts/GothamRnd-Bold.otf") format("truetype");
 }
 *,
 ::after,
@@ -24,7 +24,7 @@
 
 body {
   background-color: var(--color-bg);
-  background-image: url("img/pattern.png");
+  background-image: url("img/pattern-min.png");
   background-size: contain;
   background-position-x: -62px;
   background-position-y: -125px;

@@ -151,8 +151,7 @@ $(document).ready(function () {
       });
     },
     invalidHandler: function (event, validator) {
-      console.log('Hubo un error al enviar form');
-      console.log(event);
+      console.log('form invalid: campos requeridos');
     },
   });
 });
